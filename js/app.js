@@ -1,4 +1,4 @@
-var myApp = angular.module('TacoApp',[]);
+var myApp = angular.module('TacoApp',['image-toggle','buttons','weather']);
 
 myApp.run(function(){
     console.log('App started.')
@@ -25,6 +25,9 @@ myApp.controller('OtherThing',['$scope',function($scope){
     $scope.small=true;
     $scope.primary=true;
     $scope.happy=false;
+    $scope.myImage="something.jpg"
+    $scope.myStartingLikes=77;
+    $scope.weatherCities = [];
 
     $scope.changeClass = function(){
         $scope.small = !$scope.small;
