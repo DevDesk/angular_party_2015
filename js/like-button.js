@@ -22,7 +22,7 @@ angular.module('buttons',[])
 .directive('dislikeButton', function(){
     // Runs during compile
     return {
-        //<like-button>
+        //<dislike-button>
         restrict: 'E',
         scope:{ // @ =
             likes:'=?startingValue'
